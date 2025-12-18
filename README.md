@@ -3,7 +3,7 @@
 ### Backend Engineer building **AI-integrated web services**
 with a focus on **reliability, performance, and clear responsibility separation**.
 
-I design systems by iterating on limitations discovered in previous projects —  
+I design systems by iterating on **constraints and trade-offs observed across previous projects** —  
 especially around **latency**, **scalability**, and **response reliability**.
 
 I mainly work with **Spring Boot** and **FastAPI**,  
@@ -45,9 +45,17 @@ as team-based academic or capstone projects with production-oriented constraints
 ---
 
 ## 🧠 How I Think
-- I prefer **controlled AI interactions** over fully autonomous flows to ensure stability
-- I design systems assuming **failure cases** such as latency, cache misses, and partial outages
-- I value architectures that are **clearly explainable and maintainable** by a team
+- I don’t try to directly fix every limitation I encounter.
+  Instead, I pay attention to **where and why certain approaches break down**,
+  even in areas outside my immediate responsibility.
+- These observations become **decision-making context** in later projects,
+  especially when choosing between simpler approaches and more complex ones.
+- I believe technical choices should be driven by
+  **problem scale, interaction patterns, and operational constraints**,
+  not by technology trends alone.
+- For AI integration, I prefer designs where behavior is
+  **bounded, explainable, and predictable**,
+  with clear fallback paths for latency, cache misses, or partial failures.
 
 ---
 
