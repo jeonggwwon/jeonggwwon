@@ -59,6 +59,42 @@ as team-based academic or capstone projects with production-oriented constraints
 
 ---
 
+## 📈 Project Growth Timeline
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <b>① Bovo</b><br/>
+      <sub>2025.01–02</sub><br/><br/>
+      <i>Auth / Security</i><br/><br/>
+      JWT · OAuth2<br/>
+      Spring Security
+    </td>
+    <td align="center" width="33%">
+      <b>② IM.FACT</b><br/>
+      <sub>2025.03–06</sub><br/><br/>
+      <i>Search & Retrieval Quality</i><br/><br/>
+      Query Rewriting<br/>
+      Model Evaluation & Docs
+    </td>
+    <td align="center" width="33%">
+      <b>③ T-Aging</b><br/>
+      <sub>2025.09–12</sub><br/><br/>
+      <i>System Architecture</i><br/><br/>
+      WebSocket · Cache · MQ<br/>
+      Docker · AWS
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <sub>Bovo</sub> ─────────▶ <sub>IM.FACT</sub> ─────────▶ <sub>T-Aging</sub>
+    </td>
+  </tr>
+</table>
+
+
+---
+
 ## 📂 Projects
 
 ### 🧓 T-Aging — AI Agent-based Kiosk & Mobile Service
@@ -93,14 +129,20 @@ caching strategies, and asynchronous data synchronization.
 **Tech**: FastAPI, OpenAI API, Search APIs
 
 **Summary**  
-Improved information retrieval quality by introducing **LLM-based query rewriting**  
-and implemented answer composition logic using scraped content.
+Designed and implemented core modules for **search quality improvement** in an LLM-based fact-checking pipeline,
+including **query rewriting, search result evaluation, and answer generation from scraped documents**.
+
+Focused on identifying where retrieval quality degrades in the pipeline
+and validating improvements through **model comparison and empirical testing**.
 
 **Highlights**
-- ✏️ Introduced LLM-based query rewriting and compared retrieval quality with raw queries
-- 🔎 Determined keyword-based retrieval to be more effective and integrated it into the pipeline
-- 🧾 Implemented answer generation logic based on scraped content with source references
-- 🔗 Integrated processing flow with downstream scraping and RAG components
+- 🔍 Implemented a **search module** for document collection and integrated it into the MCP pipeline
+- ✏️ Designed an **LLM-based keyword rewriting module** to improve search relevance before retrieval
+- 📊 Conducted comparative experiments on:
+  - keyword rewriting vs. raw queries
+  - different search strategies and models
+- 🧾 Built an **answer generation module** that summarizes scraped documents provided by downstream components
+- 🧪 Evaluated embedding models, LLM variants, and search configurations to identify trade-offs between quality and latency
 
 ---
 
