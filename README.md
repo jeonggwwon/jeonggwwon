@@ -10,6 +10,9 @@ I mainly work with **Spring Boot** and **FastAPI**,
 and I integrate AI components in a **controlled, performance-aware, and predictable way**  
 rather than relying on fully autonomous AI flows.
 
+I am a senior-year Computer Science student, and most of the projects below were built
+as team-based academic or capstone projects with production-oriented constraints.
+
 <p align="left">
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=spring&logoColor=white"/>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white"/>
