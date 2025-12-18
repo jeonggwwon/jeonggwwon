@@ -3,8 +3,8 @@
 ### Backend Engineer building **AI-integrated web services**
 with a focus on **reliability, performance, and clear responsibility separation**.
 
-I design systems by iterating on **constraints and trade-offs observed across previous projects** —  
-especially around **latency**, **scalability**, and **response reliability**.
+I design systems by iterating on **constraints and trade-offs observed across projects**,  
+with a focus on **latency**, **scalability**, and **response reliability**.
 
 I mainly work with **Spring Boot** and **FastAPI**,  
 and I integrate AI components in a **controlled, performance-aware, and predictable way**  
@@ -22,16 +22,6 @@ as team-based academic or capstone projects with production-oriented constraints
 
 ---
 
-## 🛠️ What I Do
-- 🧩 Design backend systems with **clear responsibility boundaries**
-- 🔐 Build secure authentication flows using **JWT & OAuth2**
-- 🤖 Integrate **LLM-based AI agents** into production-oriented services
-- 🔄 Build real-time interaction servers using **WebSocket**
-- ⚡ Reduce latency and unnecessary load through **caching strategies**
-- 🚀 Deploy and operate **multi-service environments** using Docker and AWS
-
----
-
 ## 🧰 Tech Stack
 - **Backend**: Java (Spring Boot), Python (FastAPI)
 - **Security & Auth**: Spring Security, JWT (Access / Refresh), OAuth2 (Kakao)
@@ -44,7 +34,23 @@ as team-based academic or capstone projects with production-oriented constraints
 
 ---
 
-## 🧠 How I Think
+<details>
+<summary><b>🛠️ What I Do</b></summary>
+
+- 🧩 Design backend systems with **clear responsibility boundaries**
+- 🔐 Build secure authentication flows using **JWT & OAuth2**
+- 🤖 Integrate **LLM-based AI agents** into production-oriented services
+- 🔄 Build real-time interaction servers using **WebSocket**
+- ⚡ Reduce latency and unnecessary load through **caching strategies**
+- 🚀 Deploy and operate **multi-service environments** using Docker and AWS
+
+</details>
+
+---
+
+<details>
+<summary><b>🧠 How I Think</b></summary>
+
 - I don’t try to directly fix every limitation I encounter.
   Instead, I pay attention to **where and why certain approaches break down**,
   even in areas outside my immediate responsibility.
@@ -56,6 +62,8 @@ as team-based academic or capstone projects with production-oriented constraints
 - For AI integration, I prefer designs where behavior is
   **bounded, explainable, and predictable**,
   with clear fallback paths for latency, cache misses, or partial failures.
+
+</details>
 
 ---
 
@@ -109,7 +117,9 @@ Designed the overall system architecture for a real-time kiosk environment,
 including separated **local / central databases**, session management, AI integration,  
 caching strategies, and asynchronous data synchronization.
 
-**Highlights**
+<details>
+<summary><b>Highlights</b></summary>
+  
 - 🧑‍💻 Designed per-user WebSocket sessions to manage conversational state and ordering flow
 - 🗄️ Introduced a **two-layer caching strategy** with distinct responsibilities  
   - **L1**: In-memory TTL cache for session-scoped menu snapshots (DB load reduction)  
@@ -118,6 +128,8 @@ caching strategies, and asynchronous data synchronization.
 - 📊 Evaluated multiple LLM models under latency & availability constraints and selected **GPT-4o**
 - 🔀 Defined data ownership boundaries between local (kiosk) and central (mobile) databases
 - 📬 Built an **event-driven order synchronization pipeline** using RabbitMQ
+
+</details>
 
 ---
 
@@ -135,7 +147,9 @@ including **query rewriting, search result evaluation, and answer generation fro
 Focused on identifying where retrieval quality degrades in the pipeline
 and validating improvements through **model comparison and empirical testing**.
 
-**Highlights**
+<details>
+<summary><b>Highlights</b></summary>
+
 - 🔍 Implemented a **search module** for document collection and integrated it into the MCP pipeline
 - ✏️ Designed an **LLM-based keyword rewriting module** to improve search relevance before retrieval
 - 📊 Conducted comparative experiments on:
@@ -143,6 +157,8 @@ and validating improvements through **model comparison and empirical testing**.
   - different search strategies and models
 - 🧾 Built an **answer generation module** that summarizes scraped documents provided by downstream components
 - 🧪 Evaluated embedding models, LLM variants, and search configurations to identify trade-offs between quality and latency
+
+</details>
 
 ---
 
@@ -157,8 +173,12 @@ and validating improvements through **model comparison and empirical testing**.
 Implemented authentication and user management features, focusing on  
 JWT-based security and Kakao OAuth2 integration.
 
-**Highlights**
+<details>
+<summary><b>Highlights</b></summary>
+
 - 🔐 Implemented Access / Refresh token authentication using **JJWT**
 - 🛡️ Integrated JWT validation into request flows and managed authenticated user context
 - ⚙️ Customized Spring Security filter chains (JWT filter, CORS configuration)
 - 🔑 Integrated Kakao OAuth2 login with local JWT issuance for consistent API authentication
+
+</details>
